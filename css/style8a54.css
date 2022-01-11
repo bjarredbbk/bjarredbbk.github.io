@@ -1,0 +1,75 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+
+h1							{ font-size: 2.2em !important;}
+h2							{ font-size: 1.8em !important;font-weight: 400;}
+h3							{ font-size: 1.4em !important;}
+h4							{ font-size: 1.4em !important;}
+
+
+.fusion-secondary-header	{ display: none; }
+
+.fusion-main-menu > ul > li > a { text-transform: uppercase; }
+
+#main						{ padding: 40px 0px 0px 0px !important }
+
+.height620					{ height: 620px; }
+
+.fusion-main-menu > ul {
+  text-align: center !important;
+  float: none !important;
+}
+.fusion-main-menu > ul > li > a, .fusion-main-menu > ul > li {
+  float: none !important;
+  text-align: center !important;
+  display: inline-block !important;
+}
+ 
+.fusion-main-menu > ul ul {
+  text-align: left !important;
+}
+
+.fusion-sticky-header-wrapper			{ height: 44px !important; padding-bottom: 0px; }
+.home .fusion-sticky-header-wrapper		{ height: 0px !important; padding-bottom: 0px; }
+.fusion-header-v4 .fusion-header		{ padding: 0px !important; }
+.fusion-secondary-main-menu				{ border: 0px solid !important;   }
+
+.notepad-header							{ font-family: 'Nothing You Could Do', cursive; font-size: 24px;   }
+.rotate-txt								{ 	-ms-transform: rotate(-10deg); /* IE 9 */ -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */transform: rotate(-10deg); text-align: center; }
+
+.fusion-flexslider						{ display: none !important; }
+
+.home .fusion-secondary-main-menu		{ margin-top: -50px !important; background: transparent !important;  }
+
+.table-1 tr td, .tkt-slctr-tbl-wrap-dv tr td			{ padding: 5px 20px !important; }
+.table-1 table th, .tkt-slctr-tbl-wrap-dv table th		{ padding: 5px 20px !important; }
+
+
+@media only screen and ( max-width: 700px){
+	
+	.yada	{}
+	
+	.fusion-sticky-header-wrapper		{ height: 22px !important; background: #fff !important  }
+	.fusion-mobile-menu-icons a:before	{ color: #333 !important; font-size: 24px !important;  }
+	.home .fusion-secondary-main-menu	{ margin-top: 0px !important; background: transparent !important;  }
+	
+	#main								{ padding: 20px 10px !important; }
+	
+	#googlemap							{ height: 200px !important; }
+	
+	.fusion-mobile-menu-design-modern.fusion-header-v4 .fusion-mobile-nav-holder, .fusion-mobile-menu-design-modern.fusion-header-v5 .fusion-mobile-nav-holder{
+		
+		padding-top: 30px !important;
+	}
+	
+	.header-image img				{ height: 200px !important; }
+	
+} /* end media screen */ 
