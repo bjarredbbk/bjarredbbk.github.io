@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bjärreds Båtklubb</title>
+  <title>Bjärreds Båtklubb - BBK</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body, html {
@@ -28,20 +28,34 @@
     .map-container {
       height: 100%;
     }
+    .custom-link {
+      color: inherit; /* Remove default link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .custom-link:hover, .custom-link:focus {
+      color: inherit; /* Keep color on hover and focus */
+      text-decoration: none; /* Keep no underline on hover and focus */
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      }
+
   </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <a class="navbar-brand" href="#">Bjärreds Båtklubb</a>
+  <a class="navbar-brand" href="#">Bjärreds Båtklubb - BBK</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="#about">Om BBK</a></li>
-      <li class="nav-item"><a class="nav-link" href="#members">Medlemmar</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">Om Föreningen</a></li>
+      <li class="nav-item"><a class="nav-link" href="#members">Bryggan</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Vanliga Frågor</a></li>
     </ul>
   </div>
 </nav>
@@ -51,14 +65,14 @@
 <div id="about" class="section">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h1>Om BBK</h1>
-        <p>Båtklubben för gammal och ung i hjärtat av Lomma Kommun. 
-          Vid Strandvägen/Öresundsvägen i centrala Bjärred finns BBKs brygga. 
-          För dej som är intresserad av båtliv, båt och vattensport. 
-          Bryggan i centrala Bjärred med 120 platser, badstrand, Bjärreds välkända glasskiosk och Långa Bryggan med restaurang på gångavstånd.</p>
+      <div class="col-md-4">
+        <h4>Om Föreningen</h4>
+        <p>Bjärreds Båtklubb är en ideell förening som har som syfte att främja båtlivet i Bjärred genom att äga och driva båtklubbens brygga.</p>
+        <p>För att få nyttja båtplatserna krävs medlemskap i föreningen.</p> 
+        <p>Maila oss om du har några frågor om medlemskap.</p>
+        <p><a href="mailto:bjarredsbatklubb@gmail.com">bjarredsbatklubb@gmail.com</a></p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div class="map-container">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.580239632466!2d13.018895352001133!3d55.71366780238094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653bb420da3a0d3%3A0xaa920a03e4a3b8a9!2zQmrDpHJyZWRzIELDpXRicnlnZ2EsIDIzNyAzNSBCasOkcnJlZA!5e0!3m2!1ssv!2sse!4v1471281637977" 
@@ -79,17 +93,90 @@
 
 <div id="members" class="section">
   <div class="container">
-    <h1>Members</h1>
-    <p>Information about members.</p>
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="img/nyabryggan.jpeg" alt="Description" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h4>Bryggan</h4>
+        <p>Den nyvarande båtbryggan byggdes och invigdes 2023, ett projekt som genomfördes tillsammans med PEAB. Den gamla bryggan revs och stålkonstruktionen från den gamla "långa bryggan" köptes loss och fick en uppfräshning innan den gick ut i vattnet igen. </p>
+      <p>Bryggan är helt finansierad av medlemmarna i BBK, vi får inga bidrag för den verksamhet som vi bedriver, vilket primärt är en båtbrygga.</p>
+      <p>Bryggan är konstant utsatt för vädrets påverkan vilket gör att det krävs ordentliga förtöjningar, för att vi ska undvika slitage behöver alla fästpunkter i bryggan vara fjädrade tex. </p>
+      <p>Som medlem i BBK får man ha sin båt förtöjd vid bryggan mellan den 1:a april och 15:e oktober.</p>
+      </div>
+    </div>
   </div>
 </div>
 
+
 <div id="contact" class="section">
   <div class="container">
-    <h1>Contact</h1>
-    <p>Contact information.</p>
+    <h4>Vanliga Frågor</h4>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link custom-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Får vem som helst nyttja badplatsen längst ute på bryggan?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Svar: Ja, det går bra att nyttja badplatsen även fast man inte är medlem i Bjärreds Båtklubb, men hjälp oss att hålla rent på bryggan, underlätta för bryggans medlemmar att nå sina båtar och håll uppsikt över era barn speciellt när det är båtar på väg in och ut.
+            <p>Observera att Lomma Kommun har ingenting med badbryggan eller stranden att göra, BBKs brygga är inte en officiell badplats och faller således inte under kommunens vanliga regelverk när det gäller badplatser.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link custom-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Går det att använda den gamla iläggnings-rampen vid foten av bryggan?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Svar: Nej, efter kommunens misslyckade <a href="https://lomma.se/bygga-bo-och-miljo/klimat-miljo-och-hallbarhet/klimatarbete/klimatanpassning/life-coast-adapt/erosionsskydd-i-bjarred.html">erosionsprojekt</a> är tyvärr vår ramp förstörd. Närmaste iläggnings-ramp finns i Lomma alt Vikhög. För närvarande har vi ingen information om någon framtida iläggningsplats i Bjärred.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link custom-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Vad betyder den orangea bojen som ligger förtöjd ca 500m ut i vattnet från bryggan?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Svar: Den används vid ut och inpassage för båtar, alla båtar måste hålla sig norr om bojen, köra med upptiltat drev och låg hastighet tills man passerat bojen.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link custom-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Vad kostar det att ha sin båt vid BBKs brygga?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            Svar: Först behöver man bli medlem i föreningen, det kostar 4.000:-, sen beror det var på bryggan man får sin plats, större båtar behöver ligga lite längre ut, där det är djupare och avständet mellan stolparna är längre. Platserna längst in vid stranden kostar 1.350:- och längst ut 3.700:-, sen varierar det däremellan.
+            <p>Bryggan lämpar sig för båtar med en maxlängd om 7.5m och som inte är mer djupgående än 80cm då det stundtals kan vara väldigt lågt vatten.</p>
+          </div>
+        </div>
+      </div>
+
+<!-- Insert more Q&As here-->
+    </div>
   </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
